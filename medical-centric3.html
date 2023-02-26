@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical-centric Hospital</title>
+    <link href="medical-centric.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container" id="container">
+        <nav class="navbar">
+            <div class="container2">
+                <div class="logo">Medical-centric</div>
+                <div class="hamburger"><a href="#"><img src="images/hamburger.png" alt="" width="20px" height="20px"></a></div>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="mid-container">
+        <div class="left">
+            <div class="container3">
+                        <div class="links">
+                            <ul>
+                                <li><a href="medical-centric.html">Form 1</a></li>
+                                <li><a href="medical-centric2.html">Form 2</a></li>
+                                <li><a href="medical-centric3.html">Form 3</a></li>
+                                <li><a href="viewdata.html">View data</a></li>
+                                <li><a href="editdata.html">Edit data</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+        <div class="right">
+            <!--form 1-->
+            <div class="inner-right" id="inner-right1">
+                <form class="frm">
+     
+
+            <div class="inner-right" id="inner-right3">
+                
+                    <label for="front_aadhar">Aadhar Card Front</label><br>
+                    <input type="file" name="front_aadhar" id="front_aadhar">
+                    <br>
+                    <label for="back_aadhar">Aadhar Card Back</label><br>
+                    <input type="file" name="back_aadhar" id="back_aadhar">
+                    <br>
+                    <label for="front_pan">Pan Card Front</label><br>
+                    <input type="file" name="front_pan" id="front_pan">
+                    <br>
+                    <label for="back_pan">Pan Card Back</label><br>
+                    <input type="file" name="back_pan" id="back_pan">
+                    <br><br>
+                    <br><br>
+                    <button type="button" class="btn" id="save" onclick="addDocuments()">Save</button>
+                    <button class="btn" id="edit">Edit</button>
+                </form>
+                <br><br>   
+            </div> 
+
+        </div>
+    </section>
+
+    
+    <script src="medical-centric.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    background: rgb(121, 171, 160);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.12);
+  }
+
+.container .navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+  
+}
+
+.container .container2{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .container2 .hamburger {
+    display: none;
+}
+
+.nav-link ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    z-index: 5;
+}
+  
+.nav-link ul li {
+    padding: 10px 13px;
+    position: relative;
+}
+
+.nav-link ul li a{
+    color: white;
+}
+
+.container .logo{
+    font-size: 1.5rem;
+    font-size: 400;
+}
+
+/*styling for mid-conatiner*/
+
+.mid-container{
+    margin: auto;
+    background-color: #f9f9f9;
+    height: 100%;
+}
+
+.mid-container .left{
+    width: 100%;
+    background-color: white;
+}
+
+.mid-container .left .container3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mid-container .left .links ul{
+    padding: 20px;
+    display: inline-flex;
+}
+
+.mid-container .left .links ul li {
+    padding: 10px;
+}
+
+.mid-container .left .links ul li a{
+    color: #333;
+}
+
+/* styling for forms*/
+
+.lower-container{
+    display: flex;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.lower-container .lower{
+    background-color: white;
+    padding: 10px;
+    height: 30%;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.data-container{
+    display: flex;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+.data-container .data{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    border: 1px solid #333;
+}
+
+.data tbody table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.data #showContent{
+    width: 80%;
+    border: 1px solid #333;
+    display: flex;
+}
+
+@media only screen and (max-width : 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .container2{
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .container .navbar .container2 .nav-link ul{
+        display: none;
+        visibility: hidden;
+    }
+
+    .container .container2 .logo{
+        font-size: 1.5rem;
+    }
+
+    .container .container2 .hamburger{
+        display: block;
+        margin-left: 80px;
+    }
+}

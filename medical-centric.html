@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical-centric Hospital</title>
+    <link href="medical-centric.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container" id="container">
+        <nav class="navbar">
+            <div class="container2">
+                <div class="logo">Medical-centric</div>
+                <div class="hamburger"><a href="#"><img src="images/hamburger.png" alt="" width="20px" height="20px"></a></div>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="mid-container">
+        <div class="left">
+            <div class="container3">
+                        <div class="links">
+                            <ul>
+                                <li><a href="medical-centric.html">Form 1</a></li>
+                                <li><a href="medical-centric2.html">Form 2</a></li>
+                                <li><a href="medical-centric3.html">Form 3</a></li>
+                                <li><a href="viewdata.html" id="viewdata">View data</a></li>
+                                <li><a href="editdata.html">Edit data</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+        <div class="right">
+            <!--form 1-->
+            <div class="inner-right" id="inner-right1">
+                <form class="frm">
+                    <label for="first_name">First Name</label><br>
+                    <input type="text" name="first_name" id="first_name">
+                    <br>
+                    <label for="last_name">Last Name</label><br>
+                    <input type="text" name="last_name"  id="last_name">
+                    <br>
+                    <label for="mobile-no">Mobile No.</label><br>
+                    <input type="number" name="mobno" id="mobno">
+                    <br>
+                    <label for="dob">Date of birth</label><br>
+                    <input type="date" name="dob" id="dob">
+                    <br>
+                    <label for="weight">Weight</label><br>
+                    <input type="number" name="weight" id="weight">
+                    <br>
+                    <label for="height">Height</label><br>
+                    <input type="number" name="height" id="height">
+                    <br>
+                    <label for="country">Country of origin</label><br>
+                    <input type="text" name="country" id="country">
+                    <br>
+                    <label for="daibetic">Are you daibetic or pre-diabetic?</label><br>
+                    Diabetic<input type="radio" name="daibetic" value="1" ><br>
+                    Pre-diabetic<input type="radio" name="daibetic" value="0">
+                    <br>
+                    <label for="cardiac">Have you suffered any cardiac related issuse in the past or suffering currently?</label><br>
+                    Yes<input type="radio" name="cardiac" value="1"><br>
+                    No<input type="radio" name="cardiac" value="0">
+                    <br>
+                    <label for="bloodpressure">Do you have concerns with your blood pressure</label><br>
+                    Yes<input type="radio" name="bloodpressure" value="1"><br>
+                    No<input type="radio" name="bloodpressure" value="0">
+                    <br>
+                    <label for="diseasetype">Any disease type?</label><br>
+                    <label for="diseasetype">Disease type </label><br>
+                    <input type="text" name="diseasetype" id="diseasetype">
+                    <br>
+                    <label for="diseasedescp">Disease Description </label><br>
+                    <textarea id="descp">
+
+                    </textarea>
+                    <br><br>
+                    <!--<button class="btn" id="save" onclick="addData()">Save</button>
+                    <button class="btn" id="edit">Edit</button>
+                </form>-->
+                <br><br>   
+                <button class="btn" type="button" id="save" onclick="addData()">Save</button>
+                <button class="btn" id="edit">Edit</button>
+            </div> 
+
+            <!--form 2-->
+            <!--<div class="inner-right" id="inner-right2">
+                    <label for="father_name">Father's Name</label><br>
+                    <input type="text" name="father_name">
+                    <br>
+                    <label for="father_age">Father's age</label><br>
+                    <input type="number" name="father_age">
+                    <br>
+                    <label for="father_country">Father's country of origin</label><br>
+                    <input type="text" name="father_country">
+                    <br>
+                    <label for="mother_name">Mother's Name</label><br>
+                    <input type="text" name="mother_name">
+                    <br>
+                    <label for="mother_age">Mother's age</label><br>
+                    <input type="number" name="mother_age">
+                    <br>
+                    <label for="mother_country">Mother's country of origin</label><br>
+                    <input type="text" name="mother_country">
+                    <br>
+                    <label for="daibetic">Is any of your parent daibetic or pre-diabetic?</label><br>
+                    Diabetic<input type="radio" name="daibetic" value="1"><br>
+                    Pre-diabetic<input type="radio" name="predaibetic" value="0">
+                    <br>
+                    <label for="cardiac">Have your parents suffered any cardiac related issuse in the past or suffering currently?</label><br>
+                    Yes<input type="radio" name="daibetic" value="1"><br>
+                    No<input type="radio" name="predaibetic" value="0">
+                    <br>
+                    <label for="bloodpressure">Are any of your parents concerned with their blood pressure</label><br>
+                    Yes<input type="radio" name="blood_pressure" value="1"><br>
+                    No<input type="radio" name="blood_pressure" value="0">
+                    <br>
+                    <br>
+                <br><br>   
+            </div> 
+
+
+
+            <div class="inner-right" id="inner-right3">
+                
+                    <label for="first_name">First Name</label><br>
+                    <input type="text" name="first_name">
+                    <br>
+                    <label for="last_name">Last Name</label><br>
+                    <input type="text" name="last_name">
+                    <br>
+                    <label for="email">Email id</label><br>
+                    <input type="email" name="email">
+                    <br>
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password">
+                    <br><br>
+                    <br><br>
+            </div> 
+        -->
+                </form>
+  
+            
+
+        </div>
+    </section>
+
+    <section class="lower-container">
+        <div class="lower" >
+
+            <br><br>   
+        </div> 
+    </section>
+
+    
+    <script src="medical-centric.js"></script>
+</body>
+</html>
